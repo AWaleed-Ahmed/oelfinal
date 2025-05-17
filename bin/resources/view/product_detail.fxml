@@ -1,0 +1,26 @@
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.SceneController" stylesheets="styles.css">
+    <Label layoutX="50" layoutY="20" text="Product Details"/>
+    <Label fx:id="nameLabel" layoutX="50" layoutY="60"/>
+    <Label fx:id="descLabel" layoutX="50" layoutY="90"/>
+    <Label fx:id="priceLabel" layoutX="50" layoutY="120"/>
+    <Label fx:id="sellerLabel" layoutX="50" layoutY="150"/>
+
+    <Button layoutX="50" layoutY="190" text="Buy Now" onAction="#buyProduct"/>
+    <Button layoutX="150" layoutY="190" text="Place Bid" onAction="#placeBid"/>
+
+    <TextField fx:id="bidderNameField" layoutX="50" layoutY="230" promptText="Your Name"/>
+    <TextField fx:id="bidAmountField" layoutX="50" layoutY="270" promptText="Bid Amount"/>
+
+    <TextField fx:id="reviewerNameField" layoutX="300" layoutY="230" promptText="Reviewer Name"/>
+    <TextField fx:id="ratingField" layoutX="300" layoutY="270" promptText="Rating (1-5)"/>
+    <TextArea fx:id="commentArea" layoutX="300" layoutY="310" prefHeight="60" prefWidth="200" promptText="Comment"/>
+    <Button layoutX="300" layoutY="380" text="Submit Review" onAction="#submitReview"/>
+
+    <Button layoutX="450" layoutY="20" text="Back to Marketplace" onAction="#goToMarketplace"/>
+</AnchorPane>

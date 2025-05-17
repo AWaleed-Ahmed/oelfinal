@@ -1,0 +1,41 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.SceneController"
+            stylesheets="styles.css"
+            prefWidth="500" prefHeight="400">
+
+    <Label layoutX="160" layoutY="30"
+           text="Add New Product"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="productNameField"
+               layoutX="120" layoutY="90"
+               prefWidth="260"
+               promptText="Product Name" />
+
+    <TextField fx:id="productDescField"
+               layoutX="120" layoutY="140"
+               prefWidth="260"
+               promptText="Description" />
+
+    <TextField fx:id="productPriceField"
+               layoutX="120" layoutY="190"
+               prefWidth="260"
+               promptText="Price" />
+
+    <!-- Action buttons -->
+    <Button layoutX="120" layoutY="260"
+            prefWidth="120"
+            text="Add Product"
+            onAction="#addProduct" />
+
+    <Button layoutX="260" layoutY="260"
+            prefWidth="120"
+            text="Back to Dashboard"
+            onAction="#goToSellerDashboard" />
+
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.SceneController" stylesheets="styles.css">
+    <Label layoutX="100" layoutY="30" text="Your Products"/>
+    <ListView fx:id="sellerProductsList" layoutX="100" layoutY="70" prefHeight="200" prefWidth="400"/>
+    <Button layoutX="100" layoutY="290" text="View Bids" onAction="#viewBids"/>
+    <Button layoutX="250" layoutY="290" text="Accept Bid" onAction="#acceptBid"/>
+    <Button layoutX="400" layoutY="290" text="Add Product" onAction="#goToAddProduct"/>
+    <Button layoutX="100" layoutY="340" text="Back to Welcome" onAction="#goToWelcome"/>
+</AnchorPane>

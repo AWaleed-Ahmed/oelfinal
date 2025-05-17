@@ -1,0 +1,14 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.SceneController"
+            stylesheets="styles.css" prefWidth="400" prefHeight="300">
+
+    <Label layoutX="80" layoutY="40" text="Welcome to the Marketplace" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <Button layoutX="100" layoutY="100" prefWidth="200" text="Continue as Buyer" onAction="#onBuyerClick"/>
+    <Button layoutX="100" layoutY="150" prefWidth="200" text="Continue as Seller" onAction="#onSellerClick"/>
+    <Button layoutX="100" layoutY="200" prefWidth="200" text="Exit" onAction="#exitApp"/>
+
+</AnchorPane>
